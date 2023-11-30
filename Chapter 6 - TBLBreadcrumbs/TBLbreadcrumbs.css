@@ -1,46 +1,133 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px; /* Adjust this value to match your sticky header's height */
+}
+
 #container {
- width: 1000px;
+ width: 80%;
  background-color:#ffffff;
  margin:0px auto;
 }
 
-
 #header { 
  text-align: center;  
  background-color:#D6C299;
- height: 131px;
- width: 1000px;
+ height: 200px;
+ width: 100%;
 }
 
-/*HTML 5 does not support the inline <center> tags, so it is best to get into the habit of using the "text-align: center;" code above in CSS*/
-
-
 #menu {
- float: left;
- width: 1000px;
+ /* float: left; */
+ display: flex; /* Use Flexbox to layout children */
+ justify-content: space-around; /* Space out the menu items evenly */
+ /* width: 100%; */
  background-color:#e0e0e0; 
  font-family: Verdana, Arial, Helvetica, sans-serif; color:#000000;
- font-size: 1.0em;  
-
+ font-size: 1.0em; 
+ position: sticky; 
+ z-index: 1000;
+ top:0;
 }
 
 #menu ul {
  margin:0;
  padding:0;
+ list-style-type: none;
+ display: flex;
+ width: 100;
+ justify-content: space-around; /* Space out the list items evenly */
 } 
 
 #menu ul li {
- list-style: none;
- display: inline;
+    display: inline-flex;
+    position: relative;
+    align-items: center; /* Aligns the content of li */
+} 
+
+#menu li {
+    float: none;
+    display: block;
+    position: relative;
 }
 
-/*"#menu ul li" above removes the bullets.*/
+#menu li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: black; 
+}
 
-#menu li a {     
- float: left; 
- padding: 10px 30px 10px 30px;
+#menu li a.menu-level-1 {     
+ display: inline-block;
+ position: relative;
  border-right: 1px solid #000000;
 }
+#menu li a.menu-level-1-last {     
+ display: inline-block;
+ position: relative;
+}
+
+#menu li ul a.menu-level-2 {
+ float: none; 
+ display: block;
+ padding: 10px 30px;
+ width: 100%;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block; /* or flex if you prefer */
+}
+
+#menu li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    left: 0;
+    top: 100%; /* Positioned right below the li element */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+#menu li:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+#menu li .dropdown-content li {
+    display: block; /* Ensures dropdown items are stacked vertically */
+    white-space: nowrap; /* Prevents items from wrapping */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0%;
+    overflow: hidden; /* Prevents content from expanding the box */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 /*"#menu ul a" above sets up the navigation block links. The "border-right" property sets up a black line border to the right of each rectangular link.*/
 
@@ -54,23 +141,26 @@
 
 #main-content {
  clear: left; 
- width: 900px;
+ width: 100;
  height: auto;
- padding: 15px 0px 0px 25px;
+ padding: 15px 0px 0px 15px;
 }
 
 
 #footer {
  height: 20pt;
  font-size: 10pt;
- width: 1000px; 
+ width: 100%; 
  background-color:#D6C299;
  text-align: center; 
- margin:0px auto;
+ margin:0px;
 }
 
 
-body {background-color:#b0c4de;} 
+body {
+    scroll-behavior: smooth;
+    background-color:#b0c4de;
+} 
 
 /*This changes the background color on the outside of everything that is in the container.  In this case, it provides a nice contrast with the white background of the main-content area and area to the left and right of the main-content area.*/ 
 
