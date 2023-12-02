@@ -162,6 +162,56 @@ body {
     background-color:#b0c4de;
 } 
 
+
+.textwrap-image {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0; Adjust the margin as needed */
+    float: right; /* or right */
+    /* margin: 25px; Adjusts space around the div */
+    margin: 10px 20px 10px 40px; /* top, right, bottom, left */
+    width: 50%; /* Adjusts the width of the div */
+
+}
+
+.textwrap-image img {
+    /* max-width: 50%; Ensures image is responsive */
+    /* height: auto; Maintains aspect ratio */
+    width: 100%; /* Makes the image take full width of the div */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.textwrap-image p {
+    margin-top: 5px; /* Adds space between the image and the text */
+    font-style: italic; /* Optional: for italicized figure description */
+}
+
+.button {
+    background-color:#D6C299;
+    border: none; /* No borders */
+    color: black; /* White text */
+    padding: 15px 32px; /* Top and bottom padding, left and right padding */
+    text-align: center; /* Center-aligned text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Allows setting width and height */
+    position:relative;
+    font-size: 16px; /* Font size */
+    margin: 10px 0px; /* Margin around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s;
+}
+
+/* Ensure text color remains black on hover, focus, and visited states */
+.button:visited {
+    color: black; /* Keeps the text color black */
+    text-decoration: none; /* Prevents any text underline */
+}
+
+
+
 /*This changes the background color on the outside of everything that is in the container.  In this case, it provides a nice contrast with the white background of the main-content area and area to the left and right of the main-content area.*/ 
 
  
@@ -181,7 +231,7 @@ p.display-field {display: inline-block; padding-left: 50px; text-indent: -50px;}
 /* This code is used for the hanging indents in the Work Cited page. */
 
 
-.imageleftcaption {font-size:80%; text-align:center; float:left; margin: 0px 10px 0px 0px; position:relative; top:5px; font-family: Calibri, Optima, Arial, sans-serif;}
+.imageleftcaption {font-size:80%; text-align:center; float:left; margin: 0px 10px 10px 0px; position:relative; top:5px; font-family: Calibri, Optima, Arial, sans-serif;}
 
 .imagerightcaption {font-size:80%; text-align:center; float:right; margin: 0px 0px 0px 0px; position:relative; top:5px; font-family: Calibri, Optima, Arial, sans-serif;}
 

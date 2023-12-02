@@ -17,9 +17,11 @@
 
 
     <div id="container">
-        <div id="header"><img src="TBLimages/yubieekey.png" height="188" width="300" align="left"
-                alt="Tim Berners-Lee" />
+        <div id="header">
+            <img src="images/yubieekey.png" height="100%" width="300px" align="left"
+            alt="yubieekey" /> 
             <h1 style="position:relative; top:30px">Hacking Into Universities</h1>
+            <h3 style="position:relative; top:30px; font-style:italic;">Examining the Dire Need for Better Cybersecurity Practices at Public Universities</h3>
         </div>
         <div id="menu">
             <ul>
@@ -48,11 +50,25 @@
                                 Engineering (Phishing)</a></li>
                         <li><a class="menu-level-2" href="universitythreats.html#malware">Malware and
                                 Ransomware</a></li>
-                        <li><a class="menu-level-2" href="universitythreats.html#vulnerabilities">Vulnerable Networks and Programs</a>
+                        <li><a class="menu-level-2" href="universitythreats.html#vulnerabilities">Vulnerable Networks
+                                and Programs</a>
                         </li>
                     </ul>
                 </li>
-                <li><a class="menu-level-1" href="cybersecurityatuniversities.html">Risk and Importance</a></li>
+                <li class="dropdown"> <!-- RISK AND IMPORTANCE -->
+                    <a class="menu-level-1" href="riskandimportance.html#risk">Risk and Importance
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a class="menu-level-2" href="riskandimportance.html#loss-of-ip">Loss of Intellectual
+                                Property</a></li>
+                        <li><a class="menu-level-2" href="riskandimportance.html#data-integrity">Loss of Data and Data
+                                Integrity</a></li>
+                        <li><a class="menu-level-2" href="riskandimportance.html#operational-disruption">Operational
+                                Disruption</a></li>
+                        <li><a class="menu-level-2" href="riskandimportance.html#legal-violations">Legal Violations</a></li>
+                        <li><a class="menu-level-2" href="riskandimportance.html#loss-of-trust">Loss of Trust</a></li>
+                    </ul>
+                </li>
                 <li><a class="menu-level-1" href="criticalissues.html">Critical Issues</a></li>
                 <li><a class="menu-level-1" href="futureoftheinternet.html">Possible Solutions</a></li>
                 <li><a class="menu-level-1" href="glossary.html">Glossary</a></li>
@@ -75,6 +91,10 @@
             </p>
 
             <h4 id="social-engineering">Social Engineering (Phishing)</h4>
+            <div class="textwrap-image">
+                <img class="textwrap-image" src="images/f7-4.png" alt="Flowchart depicting how attackers infiltrate network">
+                <p>Figure 7-4: Flowchart depicting how attackers infiltrate network.</p>
+            </div>
             <p>Threats can come from many directions. One form of threat is called social engineering. Social
                 engineering is a branch of hacking centering around obtaining information or encouraging employees to
                 take actions they otherwise should not – in other words, “human hacking”. A common example of social
@@ -93,10 +113,12 @@
                 further their malicious objectives from a better position. It’s easier to avoid detection, gain access,
                 and cause issues as a student or employee than as an outsider. </p>
 
-            <h3>Insert Figure 7-4</h3>
-
 
             <h4 id="malware">Malware and Ransomware</h4>
+            <div class="textwrap-image">
+                <img class="textwrap-image" src="images/f7-5.png" alt="Malware attack - Line graph showing malware attacks by industry in 2022.">
+                <p>Figure 7-4: Malware attacks - Line graph showing malware attacks by industry in 2022.</p>
+            </div>
             <p>Aside from phishing, universities also face significant threats from malware. Malware, or malicious
                 software, refers to various types of software designed to harm or exploit any device, service, or
                 network. The most common forms of malware include viruses, worms, and trojans – each of which operates
@@ -114,10 +136,10 @@
 
             <p>Malware can be used to compromise university research data or hijack administrative systems, and the
                 education industry is a prime target. Between 2021 and 2022, SonicWall’s Cyber Threat Report showed that
-                malware attacks against higher education institutions increased by 26% [2].
+                malware attacks against higher education institutions increased by 26% <a href="https://www.sonicwall.com/medialibrary/en/white-paper/2023-cyber-threat-report.pdf" target="_blank">[2]</a>.
             </p>
 
-            <h3>Insert Figure 7-5</h3>
+
 
             <p>Another prevalent threat is ransomware, a type of malware that encrypts data and demands a ransom for its
                 release. Ransomware attacks not only cripple university operations but also pose a serious threat to the
@@ -128,7 +150,7 @@
                 reputational damage. Like malware attacks, ransomware attacks pose a significant threat to the education
                 industry and universities. From 2018 to mid-September 2023, 561 ransomware attacks were confirmed on
                 schools and universities, resulting in a breach of 6.7 million records and an estimated downtime cost of
-                about $53.4 billion [3].
+                about $53.4 billion <a href="https://www.comparitech.com/blog/vpn-privacy/school-ransomware-attacks-worldwide" target="_blank">[3]</a>.
             </p>
 
             <h4 id="vulnerabilities">Vulnerable Networks and Programs</h4>
@@ -145,10 +167,11 @@
                 threats. These legacy systems often have known vulnerabilities that are easy targets for hackers, and
                 it’s not always easy to upgrade these systems without breaking existing network functions and spending
                 copious amounts of money. At the same time, missing even a single software update on one system can make
-                a university more vulnerable to an attack [4]. Universities must find a balance between managing their
+                a university more vulnerable to an attack <a href="https://www.fierceeducation.com/technology/top-5-cybersecurity-threats-facing-higher-education" target="_blank">[4]</a>. Universities must find a balance between managing their
                 existing networks and devices and upgrading them accordingly to prevent vulnerabilities – a task that is
                 both complex and resource-intensive. </p>
 
+            <a class='button' href="riskandimportance.html">Continue to Risk and Importance section</a>
 
           
         </div>

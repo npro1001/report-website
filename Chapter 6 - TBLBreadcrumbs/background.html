@@ -17,9 +17,11 @@
 
 
     <div id="container">
-        <div id="header"><img src="TBLimages/yubieekey.png" height="188" width="300" align="left"
-                alt="Tim Berners-Lee" />
+        <div id="header">
+            <img src="images/yubieekey.png" height="100%" width="300px" align="left"
+            alt="yubieekey" /> 
             <h1 style="position:relative; top:30px">Hacking Into Universities</h1>
+            <h3 style="position:relative; top:30px; font-style:italic;">Examining the Dire Need for Better Cybersecurity Practices at Public Universities</h3>
         </div>
         <div id="menu">
             <ul>
@@ -48,11 +50,24 @@
                                 Engineering (Phishing)</a></li>
                         <li><a class="menu-level-2" href="universitythreats.html#malware">Malware and
                                 Ransomware</a></li>
-                        <li><a class="menu-level-2" href="universitythreats.html#vulnerabilities">Vulnerable Networks and Programs</a>
+                        <li><a class="menu-level-2" href="universitythreats.html#vulnerabilities">Vulnerable Networks
+                                and Programs</a>
                         </li>
                     </ul>
                 </li>
-                <li><a class="menu-level-1" href="cybersecurityatuniversities.html">Risk and Importance</a></li>
+                <li class="dropdown"> <!-- RISK AND IMPORTANCE -->
+                    <a class="menu-level-1" href="riskandimportance.html#risk">Risk and Importance</a>
+                    <ul class="dropdown-content">
+                        <li><a class="menu-level-2" href="riskandimportance.html#loss-of-ip">Loss of Intellectual
+                                Property</a></li>
+                        <li><a class="menu-level-2" href="riskandimportance.html#data-integrity">Loss of Data and Data
+                                Integrity</a></li>
+                        <li><a class="menu-level-2" href="riskandimportance.html#operational-disruption">Operational
+                                Disruption</a></li>
+                        <li><a class="menu-level-2" href="riskandimportance.html#legal-violations">Legal Violations</a></li>
+                        <li><a class="menu-level-2" href="riskandimportance.html#loss-of-trust">Loss of Trust</a></li>
+                    </ul>
+                </li>
                 <li><a class="menu-level-1" href="criticalissues.html">Critical Issues</a></li>
                 <li><a class="menu-level-1" href="futureoftheinternet.html">Possible Solutions</a></li>
                 <li><a class="menu-level-1" href="glossary.html">Glossary</a></li>
@@ -60,6 +75,7 @@
 
             </ul>
         </div>
+
 
 
         <!-- html#cybersecurityatuniversities -->
@@ -105,6 +121,11 @@
             <p>The dynamic landscape of cyber threats requires a multifaceted cybersecurity approach that constantly
                 adapts and evolves. To address these challenges, universities have or must adopt a wide range of general
                 cybersecurity technologies that integrate with either new or pre-existing IT infrastructure.</p>
+            
+            <div class="textwrap-image">
+                <img class="textwrap-image" src="images/f7-2.png" alt="Graphic of explaining how a firewall functions">
+                <p>Figure 7-2: Graphic of explaining how a firewall functions.</p>
+            </div>
 
             <h6 id="firewalls">Firewalls and Intrusion Prevention Systems</h6>
             <p>Firewalls are the primary line of defense in IT networking systems; their job is to monitor incoming and
@@ -119,8 +140,7 @@
                 before they cause any harm, so if an attacker can infiltrate the university network, they can’t easily
                 send malicious traffic without being detected.</p>
 
-            <h3>Insert Figure 7-2</h3>
-
+      
             <h6 id="antivirus">Antivirus and Anti-Malware Software</h6>
             <p>Universities can and should deploy antivirus and anti-malware solutions across their networks. These
                 types of software are designed to detect malicious programs, isolate them, and eliminate them from
@@ -130,8 +150,12 @@
                 come with a built-in antivirus software called Microsoft Defender. It is critical that Microsoft
                 Defender is turned on and up to date on all university and personal Windows computers to protect against
                 malware. </p>
-
+                
             <h6 id="encryption">Data Encryption</h6>
+            <div class="textwrap-image">
+                <img src="images/f7-3.png" alt="Graphic of a VPN encrypting a users traffic.">
+                <p>Figure 7-3: Graphic of a VPN encrypting a users traffic.</p>
+            </div>
             <p>In addition to antivirus software, encryption is used to protect sensitive data when it is sitting on a
                 server or in transit across a network. By encrypting data-at-rest such as student records, research
                 data, and financial information, universities can ensure that information is unreadable even if a breach
@@ -141,7 +165,7 @@
                 private network or VPN. A VPN creates a secure connection for remote access and is essential for faculty
                 and students accessing university resources from off-campus.</p>
 
-            <h3>Insert Figure 7-3</h3>
+        
 
             <h6 id="2fa">Two-Factor Authentication (2FA or MFA)</h6>
             <p> Two-factor authentication is increasing in popularity across every industry, including education. It is
@@ -168,6 +192,7 @@
                 attackers exploit.
             </p>
 
+            <a class='button' href="universitythreats.html">Continue to University Threats section</a>
 
             
         </div>
