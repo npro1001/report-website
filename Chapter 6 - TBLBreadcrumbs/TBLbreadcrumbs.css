@@ -174,6 +174,8 @@ body {
     margin: 10px 20px 10px 40px; /* top, right, bottom, left */
     width: 50%; /* Adjusts the width of the div */
 
+
+
 }
 
 .textwrap-image img {
@@ -187,6 +189,33 @@ body {
     margin-top: 5px; /* Adds space between the image and the text */
     font-style: italic; /* Optional: for italicized figure description */
 }
+
+.textwrap-image-left {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0; Adjust the margin as needed */
+    float: left; /* or right */
+    /* margin: 25px; Adjusts space around the div */
+    margin: 20px 0px 10px 40px; /* top, right, bottom, left */
+    width: 50%; /* Adjusts the width of the div */
+
+}
+
+.textwrap-image-left img {
+    /* max-width: 50%; Ensures image is responsive */
+    /* height: auto; Maintains aspect ratio */
+    width: 80%; /* Makes the image take full width of the div */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.textwrap-image-left p {
+    margin-top: 20px; /* Adds space between the image and the text */
+    font-style: italic; /* Optional: for italicized figure description */
+}
+
+
 
 .button {
     background-color:#D6C299;
